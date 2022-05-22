@@ -1,13 +1,14 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-chrome-extension-router";
+import ImportWallet from "../pages/ImportWallet";
 
 const AppIcon = (props:{
   src: any
 }) => {
   return (
     <div className="apps">
-      <Link to="/importwallet"><img src={`./images/${props.src}`}/></Link><br/>
+      <Link component={ImportWallet} props={{ message: 'I came from component one!' }}><img src={`./images/${props.src}`}/></Link>
     </div>
   )
 }

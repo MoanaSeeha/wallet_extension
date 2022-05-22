@@ -19,7 +19,6 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element={<WalletInfo />} />
-          <Route path="/importwallet" element={<ImportWallet />} />
         </Routes>
         <Footer/>
     </div>
