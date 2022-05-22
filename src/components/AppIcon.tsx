@@ -1,11 +1,13 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 const AppIcon = (props:{
   src: any
 }) => {
   return (
     <div className="apps">
-      <a href="./restore.html"><img src={`./images/${props.src}`}/></a><br/>
+      <Link to="/importwallet"><img src={`./images/${props.src}`}/></Link><br/>
     </div>
   )
 }
